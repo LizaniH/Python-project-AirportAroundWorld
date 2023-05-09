@@ -17,8 +17,8 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
-path = "C:/Users/hunat/PycharmProjects/pythonProject/Assignment/"
-df = pd.read_csv(path + "airport.csv")
+path = "https://raw.githubusercontent.com/LizaniH/Python-project-AirportAroundWorld/blob/main/airport.csv"
+df = pd.read_csv(path)
 df['continent'].replace(np.nan, "NA", inplace=True)
 
 

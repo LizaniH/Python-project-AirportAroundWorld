@@ -97,8 +97,8 @@ def elevation_map(data,elevation_map_labels):
 
 img_ad = "https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?cs=srgb&dl=pexels-tanathip-rattanatum-2026324.jpg&fm=jpg"
 def page_intro():
-    st.image(img_ad, caption= "..Airport under sunset..")
     st.title("Welcome to the Airports information")
+    st.image(img_ad, caption= "..Airport under sunset..")
     st.write("This is the introduction page.")
     st.write("The program will help you to answer three questions:")
     st.write("1. A map that could adjusted its latitude and longitude.")
@@ -119,6 +119,8 @@ def page_intro():
 def page_1():
     st.title("Selected map and selected tables")
     st.write("the following will answer question 1 and 2. ")
+    st.write("1. A map that could adjusted its latitude and longitude.")
+    st.write("2. The airport's details from your selections(elevation range, continent, country, types of airport)")
     
     st.sidebar.header("SEARCH ANYTHING...")
     
